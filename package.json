@@ -71,12 +71,13 @@
     "tslib": "^2.4.0",
     "typescript": "^4.8.4",
     "watch": "^1.0.2",
-    "yarn": "^1.22.19"
+    "yarn": "^1.22.19",
+    "yarn-audit-fix": "^10.0.7"
   },
   "scripts": {
     "test": "jest",
-    "build": "NODE_ENV=production rm -rf ./js && tsc -p tsconfig.build.json && yarn copy-files && rollup -c",
-    "build-windows": "call buildWindows.bat",
+    "build": "SET NODE_ENV=production rm -rf ./js && tsc -p tsconfig.build.json && yarn copy-files && rollup -c",
+    "build-windows": "call buildWindows.bat --openssl-legacy-provider",
     "watch": "watch 'yarn build' ./src",
     "copy-files": "cp ./src/assets/images/*.svg ./js/assets/images",
     "copy-files-windows": "copy .\\src\\assets\\images\\*.svg .\\js\\assets\\images",
