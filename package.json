@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "types/index.d.ts",
-  "repository": "git@github.com:naisutech/react-tree.git",
+  "repository": "git@github.com:mahdi4k/react-tree.git",
   "author": "ortonomy <git@ortonomy.co>",
   "license": "MIT",
   "private": false,
