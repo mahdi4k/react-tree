@@ -15,7 +15,7 @@ export const UniversalNodeContainer = styled(motion.div)<{
 }>`
   display: flex;
   flex-direction: column;
-  padding-left: ${({ $indent }) => `calc(${$indent || 0} * 1rem)`};
+  padding-right: ${({ $indent }) => `calc(${$indent || 0} * 1rem)`};
   ${({ $truncateLongText }) =>
     $truncateLongText
       ? `
