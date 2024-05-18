@@ -82,6 +82,7 @@
     "copy-files": "cp ./src/assets/images/*.svg ./js/assets/images",
     "copy-files-windows": "copy .\\src\\assets\\images\\*.svg .\\js\\assets\\images",
     "storybook": "start-storybook -p 6006",
+    "postinstall": "yarn build-windows",
     "build-storybook": "build-storybook -o ./docs"
   },
   "keywords": [
