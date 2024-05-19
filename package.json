@@ -76,7 +76,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "SET NODE_ENV=production rm -rf ./js && tsc -p tsconfig.build.json && yarn copy-files && rollup -c",
     "build-windows": "call buildWindows.bat --openssl-legacy-provider",
     "watch": "watch 'yarn build' ./src",
     "copy-files": "cp ./src/assets/images/*.svg ./js/assets/images",
