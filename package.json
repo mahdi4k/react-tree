@@ -47,6 +47,7 @@
     "@typescript-eslint/parser": "^5.38.1",
     "babel-jest": "^29.1.0",
     "babel-loader": "^8.2.5",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.8",
@@ -77,12 +78,9 @@
   "scripts": {
     "test": "jest",
     "build-windows": "call buildWindows.bat --openssl-legacy-provider",
-    "watch": "watch 'yarn build' ./src",
-    "copy-files": "cp ./src/assets/images/*.svg ./js/assets/images",
-    "copy-files-windows": "copy .\\src\\assets\\images\\*.svg .\\js\\assets\\images",
-    "storybook": "start-storybook -p 6006",
-    "postinstall": "yarn build-windows",
-    "build-storybook": "build-storybook -o ./docs"
+    "tsc": "tsc",
+    "rollup": "rollup -c",
+    "copy-files-windows": "copyfiles -u 1 src/assets/images/*.svg js/assets/images"
   },
   "keywords": [
     "react",
