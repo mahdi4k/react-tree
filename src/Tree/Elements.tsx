@@ -111,6 +111,7 @@ export const IconBlock = styled(motion.span)<{
   `svg {
     width: 100%;
     height: 100%;
+    tranform: rotate(180deg)
     & * {
       fill: ${$color};
       stroke: ${$color};

@@ -155,7 +155,7 @@ export const AnyNode = ({
                 style={{ alignItems: 'center' }}
               >
                 {!appOptions.noIcons && (
-                  <RowBlock style={{ paddingRight: '.25rem' }}>
+                  <RowBlock style={{ paddingLeft: '.25rem' }}>
                     <IconBlock
                       $color={currentTheme.nodes?.icons?.folderColor}
                       $size={currentTheme.nodes?.icons?.size}
@@ -289,7 +289,7 @@ export const AnyNode = ({
                             <IconBlock
                               $color={currentTheme.nodes?.icons?.leafColor}
                               $size={currentTheme.nodes?.icons?.size}
-                              style={{ paddingRight: '.25rem' }}
+                              style={{ paddingLeft: '.25rem' }}
                             >
                               {RenderIcon ? (
                                 <LeafIcon
