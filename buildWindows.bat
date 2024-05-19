@@ -6,7 +6,7 @@ set NODE_ENV=production
 set NODE_OPTIONS=--openssl-legacy-provider
 IF EXIST .\\js ( rmdir /S /Q .\\js )
 REM "tsc" and "yarn" are batch files, so unless we use "call" to execute them, execution won't come back here.
-call yarn tsc -p tsconfig.build.json
+call tsc -p tsconfig.build.json
 call yarn copy-files-windows
 REM I don't know if "rollup" is a batch file, but it doesn't matter either way.
-call yarn rollup -c
+rollup -c
