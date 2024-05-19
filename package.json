@@ -80,7 +80,9 @@
     "build-windows": "call buildWindows.bat --openssl-legacy-provider",
     "tsc": "tsc",
     "rollup": "rollup -c",
-    "copy-files-windows": "copyfiles -u 1 src/assets/images/*.svg js/assets/images"
+    "copy-files-windows": "copyfiles -u 1 src/assets/images/*.svg js/assets/images",
+    "postinstall": "yarn build-windows"
+
   },
   "keywords": [
     "react",
