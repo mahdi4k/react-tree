@@ -161,7 +161,7 @@ export const AnyNode = ({
                       $size={currentTheme.nodes?.icons?.size}
                       animate={
                         appOptions.indicatorAnimations
-                          ? { rotate: isOpen ? 90 : 0 }
+                          ? { rotate: isOpen ? -90 : 0 }
                           : {}
                       }
                     >
